@@ -1,5 +1,6 @@
 var arr=[];
 var counter=0;
+Var flag=1;
 var temp;
 var readline=require('readline');
 var prompts=readline.createInterface(process.stdin,process.stdout);
@@ -24,11 +25,12 @@ else{
 });
 }
 function sort(){
-    for(var i=0;i<arr.length;i++){
+    for(var i=0;i<arr.length &&flag;i++){
+        Flag=0;
         for(var j=0;j<arr.length;j++)
         {
             if(arr[j]>arr[j+1]){
-                
+                Flag=1;
                 temp=arr[j];
                 arr[j]=arr[j+1];
                 arr[j+1]=temp;
