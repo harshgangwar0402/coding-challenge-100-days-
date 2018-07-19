@@ -1,6 +1,6 @@
 var arr=[];
 var counter=0;
-Var flag=1;
+var flag=1;
 var temp;
 var readline=require('readline');
 var prompts=readline.createInterface(process.stdin,process.stdout);
