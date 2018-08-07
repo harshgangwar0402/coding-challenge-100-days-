@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>change colour</title>
+<script>
+var now=new Date();
+var hours=now.getHours();
+document.write("<center><h1>Time is "+ hours);
+document.write("</h1></center>");
+document.bgColor="RED";
+if(hours>=0 && hours<=5)
+document.bgColor="BLUE";
+else if(hours>5 && hours<=10)
+document.bgColor="YELLOW";
+else
+if(hours>10 &&hours<=15)
+document.bgColor="ORANGE";
+else
+if(hours>15 && hours<=20)
+document.bgColor="GREY";
+else if(hours>20 && hours<=24)
+document.bgColor="PURPLE";
+
+</script>
+
+
+</head>
+
+<body>
+</body>
+</html>
