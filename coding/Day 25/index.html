@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>authentication</title>
+<script>
+function authenticate(){
+	var pwd="please"
+	var x=prompt("Enter your password","");
+	if(x.toLowerCase()==pwd){
+		alert('your password is correct');
+		 window.location="reload page.html";
+	}
+	else {
+		window.location="index.html";
+	}
+}
+</script>
+</head>
+<body onLoad="authenticate()">
+<h1>password is please</h1>
+
+</body>
+</html>
